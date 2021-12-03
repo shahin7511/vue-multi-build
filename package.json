@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --watch",
-    "build": "vue-cli-service build src/site/main.js --no-clean --mode production",
+    "build:site": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/site.vue.config.js vue-cli-service build src/site/main.js --no-clean --mode production",
+    "build:admin": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/admin.vue.config.js vue-cli-service build src/admin/main.js --no-clean --mode production",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
